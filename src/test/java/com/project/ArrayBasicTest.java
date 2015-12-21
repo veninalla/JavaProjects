@@ -1,9 +1,9 @@
-package array;
+package com.project;
 
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ArrayLargestNumberTest {
+public class ArrayBasicTest {
 	@Test
 	public void generateLNtest1() {
 		int in[] = { 2, 3, 4, 5, 6, 7, 8 };
@@ -162,7 +162,7 @@ public class ArrayLargestNumberTest {
 		int[] expected = {3,6,7,99,124};
 		ArrayBasic obj = new ArrayBasic(n);
 		  obj.sort();
-		  Assert.assertArrayEquals(expected, obj.getN());
+		  Assert.assertEquals(expected, obj.getN());
 	}
 	@Test
 	public void swapTest1(){
@@ -170,7 +170,7 @@ public class ArrayLargestNumberTest {
 		int[] expected = {1,2,4,6,5};
 		ArrayBasic obj = new ArrayBasic(n);
 		  obj.swap();
-		  Assert.assertArrayEquals(expected, obj.getN());
+		  Assert.assertEquals(expected, obj.getN());
 	}
 	@Test
 	public void mergeTest(){
@@ -179,7 +179,7 @@ public class ArrayLargestNumberTest {
 		int expected[] = {2,4,6,8,1,3,5,7,9};
 		ArrayBasic obj = new ArrayBasic(n,m);
 		int actual[] = obj.merge();
-		Assert.assertArrayEquals(expected, actual);
+		Assert.assertEquals(expected, actual);
 	}
 	
 }
