@@ -60,7 +60,7 @@ public class StringBasicTest {
 
 	@Test
 	public void palindromeTest2(){
-		boolean actual = s.palindrome("nalla");
+		boolean actual = s.palindrome("malla");
 		Assert.assertEquals(actual, false);
 	}
 }

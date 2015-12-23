@@ -9,8 +9,8 @@ public class ArrayBasicTest {
 		int in[] = { 2, 3, 4, 5, 6, 7, 8 };
 		int expected = 8;
 		ArrayBasic max = new ArrayBasic(in);
-		int actuals = max.findMax();
-		Assert.assertEquals(actuals, expected);
+		int actual = max.findMax();
+		Assert.assertEquals(actual, expected);;
 		;
 	}
 
@@ -19,8 +19,8 @@ public class ArrayBasicTest {
 		int in[] = { 2, 3, 4, 8, 5, 6, 7 };
 		int expected = 8;
 		ArrayBasic max = new ArrayBasic(in);
-		int actuals = max.findMax();
-		Assert.assertEquals(actuals, expected);
+		int actual = max.findMax();
+		Assert.assertEquals(actual, expected);
 	}
 
 	@Test
@@ -28,8 +28,8 @@ public class ArrayBasicTest {
 		int in[] = { -2, -3, -4, -8, -5, -6, -7 };
 		int expected = -2;
 		ArrayBasic max = new ArrayBasic(in);
-		int actuals = max.findMax();
-		Assert.assertEquals(actuals, expected);
+		int actual = max.findMax();
+		Assert.assertEquals(actual, expected);
 	}
 
 	@Test
@@ -37,8 +37,8 @@ public class ArrayBasicTest {
 		int in[] = { 77 };
 		int expected = 77;
 		ArrayBasic max = new ArrayBasic(in);
-		int actuals = max.findMax();
-		Assert.assertEquals(actuals, expected);
+		int actual = max.findMax();
+		Assert.assertEquals(actual, expected);
 	}
 
 	@Test
@@ -46,8 +46,8 @@ public class ArrayBasicTest {
 		int in[] = { 0 };
 		int expected = 0;
 		ArrayBasic max = new ArrayBasic(in);
-		int actuals = max.findMax();
-		Assert.assertEquals(actuals, expected);
+		int actual = max.findMax();
+		Assert.assertEquals(actual, expected);
 	}
 
 	@Test
@@ -55,8 +55,8 @@ public class ArrayBasicTest {
 		int in[] = { 2, 3, -4, -8, 5, -6, 7 };
 		int expected = 7;
 		ArrayBasic max = new ArrayBasic(in);
-		int actuals = max.findMax();
-		Assert.assertEquals(actuals, expected);
+		int actual = max.findMax();
+		Assert.assertEquals(actual, expected);
 	}
 
 	@Test
@@ -65,8 +65,8 @@ public class ArrayBasicTest {
 		int v = 4;
 		boolean expected = true;
 		ArrayBasic obj = new ArrayBasic(in);
-		boolean actuals = obj.exists(v);
-		Assert.assertEquals(actuals, expected);
+		boolean actual = obj.exists(v);
+		Assert.assertEquals(actual, expected);
 
 	}
 
@@ -76,8 +76,8 @@ public class ArrayBasicTest {
 		int v = 5;
 		boolean expected = false;
 		ArrayBasic obj = new ArrayBasic(in);
-		boolean actuals = obj.exists(v);
-		Assert.assertEquals(actuals, expected);
+		boolean actual = obj.exists(v);
+		Assert.assertEquals(actual, expected);
 
 	}
 
@@ -87,8 +87,8 @@ public class ArrayBasicTest {
 		int v = -4;
 		boolean expected = true;
 		ArrayBasic obj = new ArrayBasic(in);
-		boolean actuals = obj.exists(v);
-		Assert.assertEquals(actuals, expected);
+		boolean actual = obj.exists(v);
+		Assert.assertEquals(actual, expected);
 
 	}
 
@@ -98,8 +98,8 @@ public class ArrayBasicTest {
 		int v = 0;
 		boolean expected = true;
 		ArrayBasic obj = new ArrayBasic(in);
-		boolean actuals = obj.exists(v);
-		Assert.assertEquals(actuals, expected);
+		boolean actual = obj.exists(v);
+		Assert.assertEquals(actual, expected);
 
 	}
 	@Test
@@ -108,8 +108,8 @@ public class ArrayBasicTest {
 		int m[] = {22,33,44,5,77,88};
 		Integer expected =  5;
 		ArrayBasic obj = new ArrayBasic(n, m);
-		Integer actuals = obj.commonNumber();
-		Assert.assertEquals(expected, actuals);
+		Integer actual = obj.commonNumber();
+		Assert.assertEquals(actual, expected);
 	}
 	@Test
 	public void commonNumberTest2(){
@@ -117,8 +117,8 @@ public class ArrayBasicTest {
 		int m[] = {22,33,44,5,77,88};
 		Integer expected =  null;
 		ArrayBasic obj = new ArrayBasic(n, m);
-		Integer actuals = obj.commonNumber();
-		Assert.assertEquals(expected, actuals);
+		Integer actual = obj.commonNumber();
+		Assert.assertEquals(actual, expected);
 	}
 	@Test
 	public void commonNumberTest3(){
@@ -126,8 +126,8 @@ public class ArrayBasicTest {
 		int m[] = {22,33,44,0,77,88};
 		Integer expected =  0;
 		ArrayBasic obj = new ArrayBasic(n, m);
-		Integer actuals = obj.commonNumber();
-		Assert.assertEquals(expected, actuals);
+		Integer actual = obj.commonNumber();
+		Assert.assertEquals(actual, expected);
 	}
 	@Test
 	public void commonNumberTest4(){
@@ -135,8 +135,8 @@ public class ArrayBasicTest {
 		int m[] = {-8};
 		Integer expected =  -8;
 		ArrayBasic obj = new ArrayBasic(n, m);
-		Integer actuals = obj.commonNumber();
-		Assert.assertEquals(expected, actuals);
+		Integer actual = obj.commonNumber();
+		Assert.assertEquals(actual, expected);
 	}
 	@Test
 	public void commonNumberTest5(){
@@ -144,8 +144,8 @@ public class ArrayBasicTest {
 		int m[] = {5,33,4,5,77,88};
 		Integer expected =  4;
 		ArrayBasic obj = new ArrayBasic(n, m);
-		Integer actuals = obj.commonNumber();
-		Assert.assertEquals(expected, actuals);
+		Integer actual = obj.commonNumber();
+		Assert.assertEquals(actual, expected);
 	}
 	@Test
 	public void commonNumberTest6(){
@@ -153,8 +153,8 @@ public class ArrayBasicTest {
 		int m[] = {5,33,4,5,77,88};
 		Integer expected =  5;
 		ArrayBasic obj = new ArrayBasic(m, n);
-		Integer actuals = obj.commonNumber();
-		Assert.assertEquals(expected, actuals);
+		Integer actual = obj.commonNumber();
+		Assert.assertEquals(actual, expected);
 	}
 	@Test
 	public void sortTest1(){
@@ -162,7 +162,7 @@ public class ArrayBasicTest {
 		int[] expected = {3,6,7,99,124};
 		ArrayBasic obj = new ArrayBasic(n);
 		  obj.sort();
-		  Assert.assertEquals(expected, obj.getN());
+		  Assert.assertEquals(obj.getN(), expected);
 	}
 	@Test
 	public void swapTest1(){
@@ -170,7 +170,7 @@ public class ArrayBasicTest {
 		int[] expected = {1,2,4,6,5};
 		ArrayBasic obj = new ArrayBasic(n);
 		  obj.swap();
-		  Assert.assertEquals(expected, obj.getN());
+		  Assert.assertEquals(obj.getN(), expected);
 	}
 	@Test
 	public void mergeTest(){
@@ -179,7 +179,7 @@ public class ArrayBasicTest {
 		int expected[] = {2,4,6,8,1,3,5,7,9};
 		ArrayBasic obj = new ArrayBasic(n,m);
 		int actual[] = obj.merge();
-		Assert.assertEquals(expected, actual);
+		Assert.assertEquals(actual, expected);
 	}
 	
 }
