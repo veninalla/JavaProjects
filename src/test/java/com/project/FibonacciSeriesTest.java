@@ -3,7 +3,7 @@ package com.project;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FibonacciNumberTest {
+public class FibonacciSeriesTest {
 	@Test
 	public void generateFSTest(){
 		int[] expected = {0,1,1,2,3};

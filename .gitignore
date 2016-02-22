@@ -1,10 +1,2 @@
-.classpath
-.project
-.settings
-.settings/
-bin/
-test-output/
-src/com/*
-src/com/
-src/com/main/
-src/com/main/*.*
+/bin/
+/target/

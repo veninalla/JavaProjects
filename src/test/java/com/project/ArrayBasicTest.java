@@ -10,8 +10,8 @@ public class ArrayBasicTest {
 		int expected = 8;
 		ArrayBasic max = new ArrayBasic(in);
 		int actual = max.findMax();
-		Assert.assertEquals(actual, expected);;
-		;
+		Assert.assertEquals(actual, expected);
+		
 	}
 
 	@Test

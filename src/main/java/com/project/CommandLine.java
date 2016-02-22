@@ -8,6 +8,8 @@ public class CommandLine {
 		String a = s.next();
 		s.close();
 		return a;
+
+
 	}
 
 }
